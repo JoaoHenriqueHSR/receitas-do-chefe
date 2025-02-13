@@ -10,18 +10,17 @@ body{
 }
 
 header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     padding: 10px;
     border-bottom: solid 1px #a1a1a1;
     background-color: white;
-    box-shadow: 0 1px 5px rgb(170, 170, 170);
+    box-shadow: 0 1px 5px #aaaaaa;
 }
 
 #div_header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #div_input{
@@ -32,7 +31,8 @@ header{
 input{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    border: solid 1px #0000005b ;
+    border: solid 1px #0000005b;
+    width: 100%;
 }
 
 input:focus{
@@ -44,6 +44,9 @@ button{
     border-bottom-right-radius: 5px;
     border: solid 1px #0000005b;
     background-color: aqua;
+}
+input, button{
+    height: 100%;
 }
 
 main{
@@ -108,20 +111,28 @@ main{
 #comidas_tipicas{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 5px;
 }
 
 .tipicas{
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px rgb(150, 150, 150);
     border-radius: 5px;
 }
 
-.tipicas img{
+
+img{
     height: 100px;
     width: 200px;
+    border-radius: 5px;
 }
 
 li{
     list-style: inside;
 }
 
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
