@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/icon/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/icon/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="/assets/icon/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -14,6 +17,7 @@
                 <input type="text" placeholder="Procure uma receita">
                 <button>Procurar</button>
             </div>
+            <i class="fa-regular fa-user"></i>
         </div>
     </header>
     <main>
@@ -35,31 +39,49 @@
         <div>
             <h2>Comidas tipicas de cada regição do pais</h2>
             <div id="comidas_tipicas">
-                <div class="tipicas">
-                    <img src="./assets/images/pato-no-tucupi.jpg">
-                    <h5>Pato no Tucupi</h5>
-                    <p></p>
-                </div>
-                <div class="tipicas">
-                    <img src="./assets/images/arroz-com-pequi.webp">
-                    <h5>Arroz com Pequi</h5>
-                    <p></p>
-                </div>
-                <div class="tipicas">
-                    <img src="./assets/images/baiao-dois.jpg">
-                    <h5>Baião de Dois</h5><p></p>
-                </div>
-                <div class="tipicas">
-                    <img src="./assets/images/Feijoada.webp">
-                    <h5>Feijoada</h5>
-                    <p></p>
-                </div>
-                <div class="tipicas">
-                    <img src="./assets/images/barreado.jpg">
-                    <h5>Barreado</h5>
-                    <p></p>
-                </div>
+                <dl>
+                    <dt>Norte</dt>
+                    <dd>
+                        <img src="./assets/images/pato-no-tucupi.jpg">
+                        Pato no Tucupi
+                    </dd>
+
+                    <dt>Nordeste</dt>
+                    <dd>
+                        <img src="./assets/images/arroz-com-pequi.webp">
+                        Arroz com Pequi
+                    </dd>
+
+                    <dt>Centro-Oeste</dt>
+                    <dd>
+                        <img src="./assets/images/baiao-dois.jpg">
+                        Baião de Dois
+                    </dd>
+
+                    <dt>Sudeste</dt>
+                    <dd>
+                        <img src="./assets/images/Feijoada.webp">
+                        Feijoada
+                    </dd>
+
+                    <dt>Sul</dt>
+                    <dd>
+                        <img src="./assets/images/barreado.jpg">
+                        Barreado
+                    </dd>
+                </dl>
             </div>
+        </div>
+        <hr>
+        <div>
+            <h2>Receitas Fitness</h2>
+            <ol>
+                <li>Strogonoff fit com batata-doce</li>
+                <li>Quibe de abóbora</li>
+                <li>Pão de queijo de inhame</li>
+                <li>Espaguete de abobrinha</li>
+                <li>Salada verde com frango</li>
+            </ol>
         </div>
         <hr>
         <div id="receitas">
@@ -76,9 +98,6 @@
                 <li>Bolo</li>
                 <li>Bolo</li>
             </ul>
-        </div>
-        <div>
-
         </div>
     </main>
     <footer>
