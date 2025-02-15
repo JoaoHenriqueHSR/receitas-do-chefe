@@ -1,11 +1,12 @@
-@font-face {
-    font-family: "Anton";
-    src: url("../assets/fonts/Anton-Regular.ttf");
-}
 
 @font-face {
     font-family: "Poppins";
     src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rowdies";
+    src: url("../assets/fonts/Rowdies-Regular.ttf");
 }
 
 *{
@@ -15,7 +16,7 @@
 }
 
 body{
-    --main-color: #ffae00;
+    --main-color: #ff9900;
     --main-color-hover: #ffc340;
     background-color: #d6d6d6;
     font-family: "Poppins";
@@ -24,32 +25,35 @@ body{
 header{
     position: fixed;
     width: 100%;
-    padding: 10px;
-    border-bottom: solid 1px #a1a1a1;
-    background-color: white;
-    box-shadow: 0 1px 3px #00000063;
+    border-bottom: solid 1px #0000001c;
+    background-color: #ffffff;
     z-index: 1;
 }
 
-#div_header{
+#container_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 100px;
 }
 
+a{
+    text-decoration: none;
+}
 
 h1{
-    font-family: "Anton";
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-family: "Rowdies";
     letter-spacing: 2px;
-    color: var(--main-color);
     box-shadow: 0 0 5px var(--main-color);
     border-radius: 5px;
-    padding: 0 4px;
+    padding: 0 5px;
 }
 
 #div_input{
     display: flex;
-    width: 20%;
+    width: 30%;
     height: 40px;
 }
 
@@ -67,7 +71,7 @@ button{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: var(--main-color);
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 15px;
     width: 20%;
@@ -82,6 +86,12 @@ input, button{
     border: solid 1px #0000000e;
 }
 
+.fa-bell{
+    color: var(--main-color);
+    padding: 10px;
+    font-size: 20px;
+}
+
 .fa-user{
     color: var(--main-color);
     border: solid 1px var(--main-color);
@@ -89,27 +99,66 @@ input, button{
     padding: 10px;
 }
 
-.fa-user:hover{
+.fa-bell:hover, .fa-user:hover{
     color: var(--main-color-hover);
+}
+
+#container_nav{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    box-shadow: 1px 0  5px #00000057;
+    font-size: 18px;
+}
+
+#container_nav li{
+    list-style: none;
+}
+
+li a{
+    color: black;
+}
+
+li a:hover{
+    text-decoration: underline;
 }
 
 main{
     margin: 0 15% ;
     background-color: #ffffff;
-    padding: 70px 20px;
+    padding: 0 35px;
 }
 
+h2{
+    color: var(--main-color);
+}
 
-#famosas_container{
+#container_famosas{
     display: grid;
-    grid-gap: 20px;
     grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
     height: 500px;
-    padding: 5px 0;
     grid-template-areas: 
     "a b"
     "a c"
     ;
+}
+
+.estrelas{
+    color: #ffd000;
+    display: flex;
+    align-items: center;
+}
+
+.estrelas p{
+    color: white;
+    text-shadow: 0 0 3px #000000;
 }
 
 #famosas1{
@@ -126,53 +175,71 @@ main{
 
 #famosas3{
     background: url(/assets/images/moça-gelada.jpg);
-    background-size: cover;
     grid-area: c;
 }
 
+.titulo_famosas{
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 10px #000000;
+}
 
 .famosas{
     border-radius: 10px;
     background-size: 100% 100%;
     display: flex;
-    flex-direction: row-reverse;
-    padding: 5px;
-}
-
-.famosas p{
-    color: white;
-    font-family: "Poppins";
-    font-weight: bold;
-    font-size: 30px;
-    text-shadow: 0 0 10px black;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2%;
+    transition: transform 0.5s;
 }
 
 .famosas:hover{
-    transform: scale(1.01);
-    transition: transform 0.4s;
+    transform:  scale(1.02);
 }
 
-#comidas_tipicas{
+#container_tabela{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
 }
 
-.tipicas{
-    box-shadow: 2px 2px 5px rgb(150, 150, 150);
+#tabela{
+    width: 100%;
+    text-align: center;
+}
+
+#tabela th{
+    color: var(--main-color);
+    border: solid 1px var(--main-color);
     border-radius: 5px;
 }
 
-
-img{
-    height: 100px;
-    width: 200px;
+.fotos{
+    height: 150px;
+    width: 90%;
     border-radius: 5px;
+}
+
+dt{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
 }
 
 li{
     list-style: inside;
+}
+
+hr{
+    margin: 10px 0;
+    border-color: #0000001c;
+}
+
+.divs{
+    padding: 30px 0;
 }
 
 footer{
