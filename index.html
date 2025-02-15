@@ -10,96 +10,256 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header id="div_header">
-        <h1>DeliciasDoChefe</h1>
-        <div id="div_input">
-            <input type="text" placeholder="Procure uma receita...">
-            <button>Procurar</button>
+    <header>
+        <div id="container_header">
+            <a href="./index.html"><h1>DELICIASdoCHEFE</h1></a>
+            <div id="div_input">
+                <input type="text" placeholder="Procure uma receita...">
+                <button>Procurar</button>
+            </div>
+            <div>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            
         </div>
-        <i class="fa-regular fa-user"></i>
     </header>
+    <nav>
+        <ul id="container_nav">
+            <li><a href="">Doces</a></li>
+            <li><a href="">Carnes</a></li>
+            <li><a href="">Frutos do mar</a></li>
+            <li><a href="">Assados</a></li>
+            <li><a href="">Sobremesa</a></li>
+            <li><a href="">Massas</a></li>
+        </ul>
+    </nav>
     <main>
-        <div>
+        <div id="div_famosas" class="divs">
             <h2>Mais famosas da semana</h2>
-            <div id="famosas_container">
+            <div id="container_famosas">
                 <div id="famosas1" class="famosas">
-                    <p>Escondidinho de Strogonoff</p>
+                    <p class="titulo_famosas">Escondidinho de Strogonoff</p>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(345) Avaliações</p>
+                    </div>
                 </div>
                 <div id="famosas2" class="famosas">
-                    <p>Panquecas de banana</p>
+                    <p class="titulo_famosas">Panquecas de banana</p>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>(578) Avaliações</p>
+                    </div>
                 </div>
                 <div id="famosas3" class="famosas">
-                    <p>Moça gelada</p>
+                    <p class="titulo_famosas">Moça gelada</p>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(465) Avaliações</p>
+                    </div>
                 </div>
             </div>
         </div>
         <hr>
-        <div>
-            <h2>Comidas tipicas de cada regição do pais</h2>
-            <div id="comidas_tipicas">
+        <div id="div_tipicas" class="divs">
+            <h2>Comidas tipicas de cada região do pais</h2>
+            <div id="container_tabela">
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <th>
+                                Norte
+                            </th>
+                            <th>
+                                Nordeste
+                            </th>
+                            <th>
+                                Centro-Oeste
+                            </th>
+                            <th>
+                                Sudeste
+                            </th>
+                            <th>
+                                Sul
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tabela_imagens">
+                            <td>
+                                <img class="fotos" src="./assets/images/pato-no-tucupi.jpg">
+                            </td>
+                            <td>
+                                <img class="fotos" src="./assets/images/arroz-com-pequi.webp">
+                            </td>
+                            <td>
+                                <img class="fotos" src="./assets/images/baiao-dois.jpg">
+                            </td>
+                            <td>
+                                <img class="fotos" src="./assets/images/Feijoada.webp">
+                            </td>
+                            <td>
+                                <img class="fotos" src="./assets/images/barreado.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pato no Tucupi
+                            </td>
+                            <td>
+                                Baião de dois
+                            </td>
+                            <td>
+                                Arroz com pequi
+                            </td>
+                            <td>
+                                Feijoada
+                            </td>
+                            <td>
+                                Barreado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Peixada de tucunaré
+                            </td>
+                            <td>
+                                Moqueca de peixe
+                            </td>
+                            <td>
+                                Caldo de piranha
+                            </td>
+                            <td>
+                                Feijão Tropeiro
+                            </td>
+                            <td>
+                                Carneiro no buraco
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tacacá
+                            </td>
+                            <td>
+                                Bobó de camarão
+                            </td>
+                            <td>
+                                Mojica de pintado
+                            </td>
+                            <td>
+                                Virado paulista
+                            </td>
+                            <td>
+                                Pierogi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Bolo de macaxeira
+                            </td>
+                            <td>
+                                Cuscuz
+                            </td>
+                            <td>
+                                Pacu assado ou frito
+                            </td>
+                            <td>
+                                Tutu de feijão
+                            </td>
+                            <td>
+                                Borsch
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Caruru
+                            </td>
+                            <td>
+                                Mungunzá
+                            </td>
+                            <td>
+                                Galinhada com pequi
+                            </td>
+                            <td>
+                                Pão de queijo
+                            </td>
+                            <td>
+                                Matambre recheado
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div id="div_fitness" class="divs">
+            <h2>Receitas Fitness</h2>
+            <div id="container_fitness">
+                <ul>
+                    <li>Strogonoff fit com batata-doce</li>
+                    <li>Quibe de abóbora</li>
+                    <li>Pão de queijo de inhame</li>
+                    <li>Espaguete de abobrinha</li>
+                    <li>Salada verde com frango</li>
+                </ul>  
+            </div>
+        </div>
+        <hr>
+        <div id="div_internacional" class="divs">
+            <h2>Comidas internacionais</h2>
+            <div id="container_internacional" class="containers">
                 <dl>
-                    <dt>Norte</dt>
-                    <dd>
-                        <img src="./assets/images/pato-no-tucupi.jpg">
-                        Pato no Tucupi
-                    </dd>
+                    <dt>Japão</dt>
+                    <dd><a href="./pagina2.html">お好み焼き(okonomiyaki)</a></dd>
+                    <dd>焼きそば(yakisoba)</dd>
+                    <dd>とんかつ(tonkatsu)</dd>
 
-                    <dt>Nordeste</dt>
-                    <dd>
-                        <img src="./assets/images/arroz-com-pequi.webp">
-                        Arroz com Pequi
-                    </dd>
+                    <dt>China</dt>
+                    <dd>拉麵(Lamen)</dd>
+                    <dd>饺子 (jiǎozǐ)</dd>
+                    <dd>包子(baozi)</dd>
 
-                    <dt>Centro-Oeste</dt>
-                    <dd>
-                        <img src="./assets/images/baiao-dois.jpg">
-                        Baião de Dois
-                    </dd>
+                    <dt>Italia</dt>
+                    <dd>Carbonara</dd>
+                    <dd>Ravioli</dd>
+                    <dd>Gelato Biscotto</dd>
 
-                    <dt>Sudeste</dt>
-                    <dd>
-                        <img src="./assets/images/Feijoada.webp">
-                        Feijoada
-                    </dd>
-
-                    <dt>Sul</dt>
-                    <dd>
-                        <img src="./assets/images/barreado.jpg">
-                        Barreado
-                    </dd>
+                    <dt>França</dt>
+                    <dd>Madeleines</dd>
+                    <dd>Bouillabaisse</dd>
+                    <dd>Pistou</dd>
                 </dl>
             </div>
         </div>
         <hr>
         <div>
-            <h2>Receitas Fitness</h2>
-            <ol>
-                <li>Strogonoff fit com batata-doce</li>
-                <li>Quibe de abóbora</li>
-                <li>Pão de queijo de inhame</li>
-                <li>Espaguete de abobrinha</li>
-                <li>Salada verde com frango</li>
-            </ol>
-        </div>
-        <hr>
-        <div id="receitas">
-            <h2>Receitas classicas</h2>
-            <ul>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-                <li>Bolo</li>
-            </ul>
+            <h2>Comidas da Vovó</h2>
+            <div>
+                <ol>
+                    <li>Bolo de cenoura</li>
+                    <li>Bolo de fubá</li>
+                    <li>Bolinho de chuva</li>
+                    <li>Biscoito de maisena</li>
+                    <li>Carne de panela com batata</li>
+                </ol>
+            </div>
         </div>
     </main>
     <footer>
-        <p>&copy;2025; Feito por Joao Henrique</p>
+        <p>&copy;2025; Feito por João Henrique</p>
     </footer>
 </body>
 </html>
