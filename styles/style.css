@@ -17,7 +17,7 @@
 
 body{
     --main-color: #ff9900;
-    --main-color-hover: #ffc340;
+    --main-color-hover: #ffb922;
     background-color: #d6d6d6;
     font-family: "Poppins";
 }
@@ -41,7 +41,7 @@ a{
     text-decoration: none;
 }
 
-h1{
+h1, h4{
     background-color: var(--main-color);
     color: #ffffff;
     font-family: "Rowdies";
@@ -101,6 +101,11 @@ input, button{
 
 .fa-bell:hover, .fa-user:hover{
     color: var(--main-color-hover);
+    border-color: var(--main-color-hover);
+}
+
+.ponteiro{
+    cursor: pointer;
 }
 
 #container_nav{
@@ -135,8 +140,9 @@ main{
     padding: 0 35px;
 }
 
-h2{
+h2, h3{
     color: var(--main-color);
+    margin-bottom: 10px;
 }
 
 #container_famosas{
@@ -223,14 +229,99 @@ h2{
     border-radius: 5px;
 }
 
+#container_fitness{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+#container_fitness div{
+    border: solid 1px #0000001c;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ol li{
+    list-style: inside decimal;
+}
+
+li{
+    list-style: inside;
+}
+
+#list_domingo{
+    grid-column-start: 2;
+}
+
+.list{
+    transition: transform 0.5s;
+}
+
+.list:hover{
+    transform: scale(1.08);
+    background-color: #00000059;
+    transition: background-color 0.6s, transform 1.0s;
+    color: white;
+    text-shadow: 0 0 3px #000;
+}
+
+
+
+#container_internacional{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    border: solid 1px #0000001c;
+    border-radius: 5px;
+}
+
 dt{
     color: var(--main-color);
     font-size: 18px;
     font-weight: bold;
 }
 
-li{
-    list-style: inside;
+dd{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+dd a{
+    color: #000000;
+}
+
+dd:hover, dd a:hover{
+    color: var(--main-color-hover);
+}
+
+dd:active{
+    transform: scale(0.95);
+}
+
+#list_vovo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin: 0 5%;
+}
+
+#list_vovo li{
+    display: flex;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#list_vovo img{
+    width: 190px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+#list_vovo div{
+    margin-left: 20px;
 }
 
 hr{
@@ -243,7 +334,46 @@ hr{
 }
 
 footer{
-    background-color: white;
+    padding-top: 10px;
+    background-color: #ffffff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px #0000001c;
+}
+
+#container_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#creditos{
+    font-size: 18px;
+}
+
+.p-link a{
+    font-weight: bold;
+}
+
+.p-link a:hover{
+    color: #0099ff;
+}
+
+.fa-brands{
+    padding: 2px;
+}
+
+.fa-github{
+    color: #f0f6fc;
+    background-color: #010409;
+    border-radius: 50%;
+}
+
+.fa-gitlab{
+    color: #e24329;
+}
+
+.fa-linkedin{
+    color: #0a66c2;
 }
