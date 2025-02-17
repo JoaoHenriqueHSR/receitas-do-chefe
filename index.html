@@ -15,11 +15,11 @@
             <a href="./index.html"><h1>DELICIASdoCHEFE</h1></a>
             <div id="div_input">
                 <input type="text" placeholder="Procure uma receita...">
-                <button>Procurar</button>
+                <button class="ponteiro">Procurar</button>
             </div>
             <div>
-                <i class="fa-solid fa-bell"></i>
-                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-bell ponteiro"></i>
+                <i class="fa-regular fa-user ponteiro"></i>
             </div>
             
         </div>
@@ -206,21 +206,90 @@
         </div>
         <hr>
         <div id="div_fitness" class="divs">
-            <h2>Receitas Fitness</h2>
+            <h2>Comidas fitness durante a semana</h2>
             <div id="container_fitness">
-                <ul>
-                    <li>Strogonoff fit com batata-doce</li>
-                    <li>Quibe de abóbora</li>
-                    <li>Pão de queijo de inhame</li>
-                    <li>Espaguete de abobrinha</li>
-                    <li>Salada verde com frango</li>
-                </ul>  
+                <div id="list_segunda" class="list">
+                   <h3>Segunda</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Omelete com espinafre e aveia</li>
+                        <li><strong>Lanche da manhã:</strong> Iogurte natural com castanhas</li>
+                        <li><strong>Almoço:</strong> Frango grelhado com batata-doce e salada</li>
+                        <li><strong>Lanche da tarde:</strong> Vitamina de banana com whey</li>
+                        <li><strong>Jantar:</strong> Sopa de legumes com frango desfiado</li>
+                    </ol> 
+                </div>
+
+                <div id="list_terca" class="list">
+                    <h3>Terça</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Tapioca com queijo branco e café sem açúcar</li>
+                        <li><strong>Lanche da manhã:</strong> Mix de frutas com chia</li>
+                        <li><strong>Almoço:</strong> Peito de frango com quinoa e brócolis</li>
+                        <li><strong>Lanche da tarde:</strong> Barra de proteína e chá verde</li>
+                        <li><strong>Jantar:</strong> Omelete com cogumelos</li>
+                    </ol>
+                </div>
+                    
+                <div id="list_quarta" class="list">
+                    <h3>Quarta</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Pão integral com ovo mexido e suco natural</li>
+                        <li><strong>Lanche da manhã:</strong> Mix de castanhas e amêndoas</li>
+                        <li><strong>Almoço:</strong> Salmão grelhado com arroz integral e salada</li>
+                        <li><strong>Lanche da tarde:</strong> Iogurte natural com mel e aveia</li>
+                        <li><strong>Jantar:</strong> Creme de abóbora com frango desfiado</li>
+                    </ol>
+                </div>
+
+                <div id="list_quinta" class="list">
+                    <h3>Quinta</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Panqueca de banana com aveia</li>
+                        <li><strong>Lanche da manhã:</strong> Suco detox (couve, limão e gengibre)</li>
+                        <li><strong>Almoço:</strong> Peito de peru com arroz integral e legumes</li>
+                        <li><strong>Lanche da tarde:</strong> Shake proteico</li>
+                        <li><strong>Jantar:</strong> Sopa de ervilha com frango</li>
+                    </ol>
+                </div>
+
+                <div id="list_sexta" class="list">
+                    <h3>Sexta</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Smoothie de frutas vermelhas e chia</li>
+                        <li><strong>Lanche da manhã:</strong> Pão integral com cottage</li>
+                        <li><strong>Almoço:</strong> Tilápia assada com purê de batata-doce</li>
+                        <li><strong>Lanche da tarde:</strong> Mix de nozes e amendoim</li>
+                        <li><strong>Jantar:</strong> Omelete recheada com ricota</li>
+                    </ol>
+                </div>
+
+                <div id="list_sabado" class="list">
+                    <h3>Sábado</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Iogurte com granola e mel</li>
+                        <li><strong>Lanche da manhã:</strong> Frutas secas e castanhas</li>
+                        <li><strong>Almoço:</strong> Filé de frango com batata rústica e salada</li>
+                        <li><strong>Lanche da tarde:</strong> Shake de morango com whey</li>
+                        <li><strong>Jantar:</strong> Sopa de abóbora com carne magra</li>
+                    </ol>
+                </div>
+                
+                <div id="list_domingo" class="list">
+                    <h3>Domingo</h3>
+                    <ol>
+                        <li><strong>Café da manhã:</strong> Pão de batata-doce com ovo cozido</li>
+                        <li><strong>Lanche da manhã:</strong> Mix de frutas com iogurte</li>
+                        <li><strong>Almoço:</strong> Peito de frango grelhado com arroz negro e legumes</li>
+                        <li><strong>Lanche da tarde:</strong> Barra de nuts</li>
+                        <li><strong>Jantar:</strong> Omelete com queijo branco</li>
+                    </ol> 
+                </div>
             </div>
         </div>
         <hr>
         <div id="div_internacional" class="divs">
-            <h2>Comidas internacionais</h2>
-            <div id="container_internacional" class="containers">
+            <h2>Comidas internacionais</i></h2>
+            <div id="container_internacional">
                 <dl>
                     <dt>Japão</dt>
                     <dd><a href="./pagina2.html">お好み焼き(okonomiyaki)</a></dd>
@@ -242,24 +311,145 @@
                     <dd>Bouillabaisse</dd>
                     <dd>Pistou</dd>
                 </dl>
+
+                <dl>
+                    <dt>Brasil</dt>
+                    <dd>Feijoada</dd>
+                    <dd>Pão de queijo</dd>
+                    <dd>Moqueca</dd>
+                
+                    <dt>México</dt>
+                    <dd>Tacos</dd>
+                    <dd>Guacamole</dd>
+                    <dd>Chiles en nogada</dd>
+                
+                    <dt>Índia</dt>
+                    <dd>Curry</dd>
+                    <dd>Biriyani</dd>
+                    <dd>Gulab Jamun</dd>
+                
+                    <dt>Tailândia</dt>
+                    <dd>Pad Thai</dd>
+                    <dd>Tom Yum</dd>
+                    <dd>Mango Sticky Rice</dd>
+                </dl>
+                
+                <dl>
+                    <dt>Alemanha</dt>
+                    <dd>Bratwurst</dd>
+                    <dd>Pretzel</dd>
+                    <dd>Sauerkraut</dd>
+                
+                    <dt>Espanha</dt>
+                    <dd>Paella</dd>
+                    <dd>Churros</dd>
+                    <dd>Gazpacho</dd>
+                
+                    <dt>Grécia</dt>
+                    <dd>Moussaka</dd>
+                    <dd>Souvlaki</dd>
+                    <dd>Baklava</dd>
+                
+                    <dt>Turquia</dt>
+                    <dd>Kebab</dd>
+                    <dd>Lahmacun</dd>
+                    <dd>Baklava</dd>
+                </dl>
+                
+                <dl>
+                    <dt>Portugal</dt>
+                    <dd>Bacalhau à Brás</dd>
+                    <dd>Pastel de nata</dd>
+                    <dd>Francesinha</dd>
+                
+                    <dt>Estados Unidos</dt>
+                    <dd>Hambúrguer</dd>
+                    <dd>Mac and Cheese</dd>
+                    <dd>Apple Pie</dd>
+                
+                    <dt>Coreia do Sul</dt>
+                    <dd>Kimchi</dd>
+                    <dd>Bulgogi</dd>
+                    <dd>Japchae</dd>
+                
+                    <dt>Egito</dt>
+                    <dd>Koshari</dd>
+                    <dd>Ful Medames</dd>
+                    <dd>Mahshi</dd>
+                </dl>
             </div>
         </div>
         <hr>
-        <div>
+        <div id="div_vovo" class="divs">
             <h2>Comidas da Vovó</h2>
             <div>
-                <ol>
-                    <li>Bolo de cenoura</li>
-                    <li>Bolo de fubá</li>
-                    <li>Bolinho de chuva</li>
-                    <li>Biscoito de maisena</li>
-                    <li>Carne de panela com batata</li>
-                </ol>
+                <ul id="list_vovo">
+                    <li>
+                        <img src="/assets/images/bolo_cenoura.png">
+                        <div>
+                            <h3>Bolo de cenoura</h3>
+                            <p>Um clássico da cozinha caseira, esse bolo de cenoura fofinho é coberto por uma generosa camada de brigadeiro cremoso. Perfeito para acompanhar um café da tarde ou adoçar qualquer momento especial.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/bolo_fuba.jpg" alt="Bolo de fubá">
+                        <div>
+                            <h3>Bolo de fubá</h3>
+                            <p>Esse bolo simples, mas incrivelmente saboroso, é feito com fubá e leite, garantindo uma textura macia e um sabor levemente adocicado. Uma receita tradicional da roça que fica ainda melhor com um toque de erva-doce.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/bolinho_chuva.jpg" alt="Bolinho de chuva polvilhado com açúcar">
+                        <div>
+                            <h3>Bolinho de chuva</h3>
+                            <p>Pequenos bolinhos fritos, dourados por fora e macios por dentro, polvilhados com açúcar e canela. Uma receita que remete à infância, feita para ser degustada em dias frios junto a uma xícara de chá ou café.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/biscoito_maizena.jpg" alt="Biscoito de maisena">
+                        <div>
+                            <h3>Biscoito de maisena</h3>
+                            <p>Deliciosos biscoitinhos leves e crocantes, feitos com maisena, manteiga e leite condensado. Têm uma textura delicada que desmancha na boca e são ideais para acompanhar um chá da tarde ou um copo de leite.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/carne_panela.jpg" alt="Carne de panela com batatas">
+                        <div>
+                            <h3>Carne de panela com batata</h3>
+                            <p>Um prato caseiro irresistível, preparado com carne cozida lentamente até ficar macia e suculenta, junto a pedaços de batata que absorvem todo o sabor do molho temperado. Uma receita cheia de aconchego e memórias afetivas.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy;2025; Feito por João Henrique</p>
+        <h4>DELICIASdoCHEFE</h4>
+        <div id="container_footer">
+            <p id="creditos">&copy;2025; Feito por João Henrique</p>
+            <div id="container-conteudo">
+                <p id="p-github" class="p-link" >
+                    <a class="link" href="https://github.com/JoaoHenriqueHSR" target="_blank"> 
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </p>
+
+                <p id="p-gitlab" class="p-link" >
+                    <a class="link" href="https://gitlab.com/jh6649713" target="_blank">
+                        <i class="fa-brands fa-gitlab"></i> 
+                        GitLab
+                    </a>
+                </p>
+
+                <p id="p-linkedin" class="p-link">
+                    <a class="link" href="https://www.linkedin.com/in/joao-henrique-b284b9284" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> 
+                        Linkedin
+                    </a>
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
