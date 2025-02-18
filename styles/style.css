@@ -42,7 +42,7 @@ a{
 }
 
 h1, h4{
-    background-color: var(--main-color);
+    background: linear-gradient(to top, var(--main-color), var(--main-color-hover));
     color: #ffffff;
     font-family: "Rowdies";
     letter-spacing: 2px;
@@ -201,6 +201,7 @@ h2, h3{
     justify-content: space-between;
     padding: 2%;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 
 .famosas:hover{
@@ -254,15 +255,47 @@ li{
 }
 
 .list{
+    background-color: #ffffff;
+    background-blend-mode: overlay;
     transition: transform 0.5s;
+    cursor: pointer;
+}
+
+#list_segunda:hover{
+    background: url(/assets/images/omelete.jpg);
+    background-size: 100% 100%;
+}
+
+#list_terca:hover{
+    background: url(/assets/images/tapioca.jpg);
+    background-size: 100% 100%;
+}
+#list_quarta:hover{
+    background: url(/assets/images/pão\ integral.jpg);
+    background-size: 100% 100%;
+}
+#list_quinta:hover{
+    background: url(/assets/images/panqueca.jpg);
+    background-size: 100% 100%;
+}
+#list_sexta:hover{
+    background: url(/assets/images/Smoothie.jpg);
+    background-size: 100% 100%;
+}
+#list_sabado:hover{
+    background: url(/assets/images/iogurte.jpg);
+    background-size: 100% 100%;
+}
+#list_domingo:hover{
+    background: url(/assets/images/pao\ de\ batata\ doce.jpg);
+    background-size: 100% 100%;
 }
 
 .list:hover{
     transform: scale(1.08);
-    background-color: #00000059;
     transition: background-color 0.6s, transform 1.0s;
     color: white;
-    text-shadow: 0 0 3px #000;
+    text-shadow: 0 0 4px #000;
 }
 
 
@@ -329,7 +362,7 @@ hr{
     border-color: #0000001c;
 }
 
-.divs{
+.sections{
     padding: 30px 0;
 }
 
