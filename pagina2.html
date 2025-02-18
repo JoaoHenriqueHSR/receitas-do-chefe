@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/assets/icons/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <style>
-
         body{
             --main-color: #ff9900;
         }
@@ -17,7 +16,6 @@
         main{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
         }
 
@@ -32,7 +30,8 @@
         }
 
         img{
-            width: 400px;
+            width: 70%;
+            border-radius: 10px;
         }
           
         thead{
@@ -44,17 +43,59 @@
             font-weight: bold;
             font-size: 18px;
         }
+
+        #container_okonomiyaki{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #container_okonomiyaki h2{
+            text-decoration: underline;
+        }
+
+        #div_receita{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;
+            margin-top: 40px;
+        }
+
+        #div_preparo{
+            border: solid 1px #0000001c;
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+
+        h3{
+            text-align: center;     
+        }
+        #div_preparo ol{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        #div_preparo ol li{
+            border-bottom: solid 1px #0000001c;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="container_header" class="containers">
+        <div id="container_header">
             <a href="./index.html"><h1>DELICIASdoCHEFE</h1></a>
             <div id="div_input">
                 <input type="text" placeholder="Procure uma receita...">
-                <button>Procurar</button>
+                <button class="ponteiro">Procurar</button>
             </div>
-        <i class="fa-regular fa-user"></i>
+            <div>
+                <i class="fa-solid fa-bell ponteiro"></i>
+                <i class="fa-regular fa-user ponteiro"></i>
+            </div>
         </div>
     </header>
     <nav>
@@ -68,73 +109,86 @@
         </ul>
     </nav>
     <main>
-        <div>
+        <section id="container_okonomiyaki" class="sections">
             <h2>okonomiyaki</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th id="table_titulo">Ingredientes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            2 xícaras (chá) de farinha de trigo (220 g)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            1 e meia xícara (chá) de água (300 ml)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            1 envelope de HONDASHI
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            2 pitadas de sal
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            4 ovos
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            meio repolho médio cortado em cubos pequenos (380 g)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            1 colher (sopa) de fermento em pó
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            1 e meia colher (sopa) de óleo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            6 fatias de bacon cortadas ao meio (180 g)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            meia xícara (chá) de maionese (100 g)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            1 xícara (chá) de cebolinha-verde, em rodelas finas
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div> 
+            <img src="/assets/images/okonomiyaki.jpg">
+            <p>O okonomiyaki é um prato japonês semelhante a uma panqueca salgada, feito com uma massa à base de farinha, ovos e repolho, misturada com ingredientes variados como carne de porco, frutos do mar ou queijo. Existem dois estilos principais: o de Osaka, onde tudo é misturado antes de grelhar, e o de Hiroshima, que é montado em camadas e pode incluir macarrão. Finalizado com molho okonomiyaki, maionese japonesa, alga nori e katsuobushi, é uma iguaria versátil e popular no Japão, encontrada em restaurantes especializados e festivais de rua.</p>
+            <div id="div_receita">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table_titulo">Ingredientes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                2 xícaras (chá) de farinha de trigo (220 g)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1 e meia xícara (chá) de água (300 ml)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1 envelope de Hondashi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2 pitadas de sal
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4 ovos
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                meio repolho médio cortado em cubos pequenos (380 g)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1 colher (sopa) de fermento em pó
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1 e meia colher (sopa) de óleo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                6 fatias de bacon cortadas ao meio (180 g)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                meia xícara (chá) de maionese (100 g)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1 xícara (chá) de cebolinha-verde, em rodelas finas
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="div_preparo">
+                    <h3>Modo de preparo</h3>
+                    <ol>
+                        <li>Em uma tigela grande, coloque a farinha de trigo, a água, o Hondashi e o sal, e misture com um batedor manual de arame por 3 minutos, ou até ficar homogêneo. Junte os ovos e o repolho, e mexa até envolver todo o repolho com a massa. Acrescente o fermento e misture.</li>
+                        <li>Em uma frigideira antiaderente pequena, coloque um fio do óleo e leve ao fogo médio para aquecer. Junte 1 xícara (chá) da massa e espalhe de maneira uniforme. Deixe cozinhar por 4 minutos, ou até começar a dourar, as bordas soltarem e o centro estar cozido. Acomode 4 metades de fatias de bacon sobre a massa, pressione ligeiramente e, com o auxílio de uma espátula, vire a panqueca. Deixe cozinhar por mais 3 minutos, ou até dourar o outro lado.</li>
+                        <li>Transfira para uma travessa e mantenha aquecido. Repita o processo com o restante da massa, repondo o óleo quando necessário.</li>
+                        <li>Coloque a maionese em um saco plástico resistente e próprio para alimentos, e faça um pequeno corte em uma das pontas. Decore cada panqueca com fios de maionese e, por cima, distribua a cebolinha-verde. Sirva em seguida.</li>
+                    </ol>
+                </div>
+            </div>
+        </section> 
     </main>
     <footer>
         <h4>DELICIASdoCHEFE</h4>
