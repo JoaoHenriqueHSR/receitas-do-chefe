@@ -19,31 +19,6 @@
             align-items: center;
         }
 
-        table{
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-         table, thead, th, tbody, td{
-            border-collapse: collapse;
-            border: solid 1px #00000033;
-        }
-
-        img{
-            width: 70%;
-            border-radius: 10px;
-        }
-          
-        thead{
-            background-color: var(--main-color);
-        }
-
-        #table_titulo{
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
         #container_okonomiyaki{
             display: flex;
             flex-direction: column;
@@ -53,6 +28,41 @@
 
         #container_okonomiyaki h2{
             text-decoration: underline;
+        }
+
+        img{
+            width: 70%;
+            border-radius: 10px;
+        }
+
+        #div_table{
+            border-radius: 10px;
+            overflow: hidden;
+            border: solid 1px #0000001c;
+        }
+
+        #table_titulo{
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table{
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tbody tr{
+            border-top: solid 1px #0000001c;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+          
+        thead{
+            background-color: var(--main-color);
         }
 
         #div_receita{
@@ -66,12 +76,12 @@
             border: solid 1px #0000001c;
             border-radius: 10px;
             overflow: hidden;
-            
         }
 
         h3{
             text-align: center;     
         }
+
         #div_preparo ol{
             display: flex;
             flex-direction: column;
@@ -81,13 +91,14 @@
 
         #div_preparo ol li{
             border-bottom: solid 1px #0000001c;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
     <header>
         <div id="container_header">
-            <a href="./index.html"><h1>DELICIASdoCHEFE</h1></a>
+            <a href="./index.html"><h1><i class="fa-solid fa-spoon"></i> DELICIASdoCHEFE <i class="fa-solid fa-spoon"></i></h1></a>
             <div id="div_input">
                 <input type="text" placeholder="Procure uma receita...">
                 <button class="ponteiro">Procurar</button>
@@ -114,70 +125,72 @@
             <img src="/assets/images/okonomiyaki2.jpg">
             <p>O okonomiyaki é um prato japonês semelhante a uma panqueca salgada, feito com uma massa à base de farinha, ovos e repolho, misturada com ingredientes variados como carne de porco, frutos do mar ou queijo. Existem dois estilos principais: o de Osaka, onde tudo é misturado antes de grelhar, e o de Hiroshima, que é montado em camadas e pode incluir macarrão. Finalizado com molho okonomiyaki, maionese japonesa, alga nori e katsuobushi, é uma iguaria versátil e popular no Japão, encontrada em restaurantes especializados e festivais de rua.</p>
             <div id="div_receita">
-                <table>
-                    <thead>
-                        <tr>
-                            <th id="table_titulo">Ingredientes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                2 xícaras (chá) de farinha de trigo (220 g)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1 e meia xícara (chá) de água (300 ml)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1 envelope de Hondashi
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                2 pitadas de sal
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                4 ovos
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                meio repolho médio cortado em cubos pequenos (380 g)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1 colher (sopa) de fermento em pó
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1 e meia colher (sopa) de óleo
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                6 fatias de bacon cortadas ao meio (180 g)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                meia xícara (chá) de maionese (100 g)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1 xícara (chá) de cebolinha-verde, em rodelas finas
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="div_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="table_titulo">Ingredientes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    2 xícaras (chá) de farinha de trigo (220 g)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1 e meia xícara (chá) de água (300 ml)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1 envelope de Hondashi
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2 pitadas de sal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    4 ovos
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    meio repolho médio cortado em cubos pequenos (380 g)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1 colher (sopa) de fermento em pó
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1 e meia colher (sopa) de óleo
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    6 fatias de bacon cortadas ao meio (180 g)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    meia xícara (chá) de maionese (100 g)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1 xícara (chá) de cebolinha-verde, em rodelas finas
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div id="div_preparo">
                     <h3>Modo de preparo</h3>
                     <ol>
@@ -191,7 +204,7 @@
         </section> 
     </main>
     <footer>
-        <h4>DELICIASdoCHEFE</h4>
+        <h4><i class="fa-solid fa-spoon"></i> DELICIASdoCHEFE <i class="fa-solid fa-spoon"></i></h4>
         <div id="container_footer">
             <p id="creditos">&copy;2025; Feito por João Henrique</p>
             <div id="container-conteudo">
